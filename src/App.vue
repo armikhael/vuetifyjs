@@ -16,7 +16,17 @@
     </v-toolbar>
 
     <v-content>
-      <router-view/>
+      <div class="">
+        <v-menu offset-y>
+          <v-btn color="primary" dark slot="activator">Dropdown</v-btn>
+          <v-list>
+            <v-list-tile v-for="(item, index) in items" :key="index" @click="">
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+            </v-list-tile>
+          </v-list>
+        </v-menu>
+
+      </div>
     </v-content>
 
     <v-navigation-drawer
@@ -43,13 +53,21 @@
 
 <script>
 export default {
+  name: 'App',
   data () {
     return {
       right: true,
-      rightDrawer: false
+      rightDrawer: false,
+      clipped: false,
+      fixed: false,
+      items: [
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me 2' }
+      ]
     }
-  },
-  name: 'App'
+  }
 }
 </script>
 

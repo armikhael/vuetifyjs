@@ -1,30 +1,16 @@
 <template>
-  <div class="text-xs-center">
-    <v-menu offset-y>
-      <v-btn color="primary" dark slot="activator">Dropdown</v-btn>
-      <v-list>
-        <v-list-tile v-for="item in items" :key="item.title" @click="">
-          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-menu>
+  <div class="">
+    {{ hello }}
   </div>
 </template>
 <script>
 export default {
+  name: 'HelloWorld',
   data () {
     return {
-      right: true,
-      rightDrawer: false,
-      items: [
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me 2' }
-      ]
+      hello: 'Hola mundo'
     }
-  },
-  name: 'App'
+  }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
