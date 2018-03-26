@@ -34,11 +34,21 @@
       app
     >
     </v-navigation-drawer>
+    <hr>
+      <p>Detalle del producto</p>
+    <hr>
+    <v-layout row>
 
+    </v-layout>
+
+
+    <hr>
+      <p>Footer</p>
+    <hr>
     <v-footer class="footer_pharol">
       <v-container>
-        <v-layout row>
-          <v-flex xs4>
+        <v-layout row wrap>
+          <v-flex xs12 sm4 md4>
             <br>
             <h3 class="title_footer">Newsletter</h3>
             <hr class="hr_footer">
@@ -57,7 +67,7 @@
               <i class="material-icons color_gris">shopping_cart</i>
             </div>
           </v-flex>
-          <v-flex xs3>
+          <v-flex xs12 sm3 md3>
             <br>
             <h3 class="title_footer">Contáctanos</h3>
             <hr class="hr_footer">
@@ -71,7 +81,7 @@
             <p class="title_footer_3"><i class="material-icons footer_azul">person_pin</i> Email</p>
             <p class="title_footer_3">ejemplo@pharol.cl</p>
           </v-flex>
-          <v-flex xs2>
+          <v-flex xs12 sm2 md2>
             <br>
             <h3 class="title_footer">Nosotros</h3>
             <hr class="hr_footer">
@@ -86,7 +96,7 @@
               <p class="title_footer_3">Envios</p>
             </div>
           </v-flex>
-          <v-flex xs3>
+          <v-flex xs12 sm3 md3>
             <br>
             <h3 class="title_footer">App</h3>
             <hr class="hr_footer">
