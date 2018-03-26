@@ -51,6 +51,7 @@
           label="Label Text"
           type="number"
         ></v-text-field>
+        <v-btn color="success">Success</v-btn>
       </v-flex>
 
     </v-layout>
@@ -229,11 +230,16 @@
     <hr>
     <v-footer class="footer_pharol">
       <v-container>
-        <v-layout row>
+        <v-layout row wrap>
           <v-flex xs12 sm4 md4>
             <br>
             <h3 class="title_footer">Newsletter</h3>
             <hr class="hr_footer">
+            <v-flex xs10 sm10 md10>
+              <v-text-field
+              label="Suscripcion"
+              ></v-text-field>
+            </v-flex>
             <br>
             <p class="title_footer_2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             <p class="title_footer_3"><i class="material-icons">radio_button_unchecked</i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
