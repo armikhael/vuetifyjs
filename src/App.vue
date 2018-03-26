@@ -53,6 +53,11 @@
             <h3 class="title_footer">Newsletter</h3>
             <hr class="hr_footer">
             <br>
+            <div class="input-group">
+              <input type="text" class="form-control footer_email" placeholder="Tu email">
+              <span class="input-group-addon"><i class="material-icons">&#xE163;</i></span>
+            </div>
+            <br>
             <p class="title_footer_2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             <p class="title_footer_3"><i class="material-icons">radio_button_unchecked</i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             <br>
@@ -247,7 +252,50 @@ export default {
   background: #02050c;
   padding-top: 10px;
 }
-/**/
+.input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+.input-group-addon {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #fff;
+    text-align: center;
+    background-color: #268ae0;
+
+    border-radius: 0px 2px 2px 0px;
+}
+.footer_email{
+    width: 75%;
+    border-radius: 2px 0px 0px 2px;
+}
+/*responsive 550*/
 @media (max-width: 550px){
   .footer_row_resposive{
     text-align: center;
@@ -258,5 +306,8 @@ export default {
   .title_footer {
     margin-bottom: 15px;
   }
+  .footer_email{
+      width: 100%;
+    }
 }
 </style>
