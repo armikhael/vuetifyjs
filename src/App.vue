@@ -75,6 +75,29 @@
           </v-layout>
         </v-container>
         <section class="section-a">
+          <v-container>
+            <v-layout>
+             <v-flex xs12 sm3 sm3>
+               <v-card>
+                 <div class="box_triangulo">
+                   <div class="triangulo_equilatero"><p>-31%</p></div>
+                 </div>
+                 <img class="resposive_img" src="@/assets/producto.png" width="100%">
+                 <v-card-title primary-title>
+                   <div>
+                     <h4 class="carru_title_1">Corcidin Gotas Pediatricas Caja con Frasco Con 30 ML Rx</h4>
+                     <p class="carru_title_2">Laboratorio Chile</p>
+                     <h4 class="carru_title_3">$ 32.100 <span class="carru_title_4">$10.698</span></h4>
+                   </div>
+                 </v-card-title>
+                 <div class="carru_add_cart_btn">
+                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+                 </div>
+               </v-card>
+             </v-flex>
+           </v-layout>
+         </v-container>
+
         </section>
 
         <v-layout row>
@@ -429,6 +452,51 @@ export default {
 .tabs__container{
   border-bottom: 1px solid #f9f7f7;
 }
+.triangulo_equilatero {
+     width: 0;
+     height: 0;
+     border-right: 40px solid transparent;
+     border-top: 40px solid #f8002d;
+     border-left: 40px solid #f8002d;
+     border-bottom: 40px solid transparent;
+}
+.box_triangulo{
+  position: absolute;
+  top:0;
+  left: 0px;
+}
+.triangulo_equilatero p{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  color: #fff;
+  font-weight: 900;
+}
+.carru_add_cart_btn{
+  text-align: center;
+  padding-bottom: 15px;
+}
+.carru_title_1{
+  color: blue;
+  font-size: 13px;
+}
+.carru_title_2{
+  color: #9a9a9a;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.carru_title_3{
+  color: #f8002d;
+  font-size: 15px;
+}
+.carru_title_4{
+  color: #9a9a9a;
+  font-size: 12px;
+  text-decoration:line-through;
+}
+
 
 /*responsive 768*/
 @media (min-width: 768px){
