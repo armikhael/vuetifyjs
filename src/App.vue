@@ -47,7 +47,7 @@
     <hr>
     <v-footer class="footer_pharol">
       <v-container>
-        <v-layout row wrap>
+        <v-layout class="footer_row_resposive" row wrap>
           <v-flex xs12 sm4 md4>
             <br>
             <h3 class="title_footer">Newsletter</h3>
@@ -246,5 +246,17 @@ export default {
   text-align: center;
   background: #02050c;
   padding-top: 10px;
+}
+/**/
+@media (max-width: 550px){
+  .footer_row_resposive{
+    text-align: center;
+  }
+  .hr_footer {
+    margin: 0 auto;
+  }
+  .title_footer {
+    margin-bottom: 15px;
+  }
 }
 </style>
