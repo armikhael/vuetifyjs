@@ -35,7 +35,35 @@
     >
     </v-navigation-drawer>
 
-
+    <hr>
+      Stepeer
+    <hr>
+    <v-stepper v-model="e1">
+      <v-stepper-header>
+        <v-stepper-step step="1" :complete="e1 > 1">Name of step 1</v-stepper-step>
+        <v-divider></v-divider>
+        <v-stepper-step step="2" :complete="e1 > 2">Name of step 2</v-stepper-step>
+        <v-divider></v-divider>
+        <v-stepper-step step="3">Name of step 3</v-stepper-step>
+      </v-stepper-header>
+      <v-stepper-items>
+        <v-stepper-content step="1">
+          <v-card color="grey lighten-1" class="mb-5" height="200px"></v-card>
+          <v-btn color="primary" @click.native="e1 = 2">Continue</v-btn>
+          <v-btn flat>Cancel</v-btn>
+        </v-stepper-content>
+        <v-stepper-content step="2">
+          <v-card color="grey lighten-1" class="mb-5" height="200px"></v-card>
+          <v-btn color="primary" @click.native="e1 = 3">Continue</v-btn>
+          <v-btn flat>Cancel</v-btn>
+        </v-stepper-content>
+        <v-stepper-content step="3">
+          <v-card color="grey lighten-1" class="mb-5" height="200px"></v-card>
+          <v-btn color="primary" @click.native="e1 = 1">Continue</v-btn>
+          <v-btn flat>Cancel</v-btn>
+        </v-stepper-content>
+      </v-stepper-items>
+    </v-stepper>
 
 
 
@@ -337,9 +365,10 @@ export default {
 
       /* DETALLE DEL PRODUCTO */
       active: null,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 
-      /* CAROUSEL DE PRODUCTOS */
+      /* STEPEER */
+      e1: 0
 
     }
   }
