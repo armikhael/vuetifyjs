@@ -1,14 +1,18 @@
 <template>
   <v-app>
-    <v-toolbar
-      app
-      :clipped-left="clipped"
-    >
+    <v-toolbar app :clipped-left="clipped">
       <img src="@/assets/logoapp.png" alt="Vuetify.js">
       <v-spacer></v-spacer>
-      <v-btn icon>
-        <i class="material-icons color_gris">person_pin</i>
-      </v-btn>
+      <v-menu left class="menu_init_box">
+        <v-btn icon dark slot="activator">
+          <i class="material-icons color_gris">person_pin</i> <p class="menu_init_title">Iniciar</p>
+        </v-btn>
+        <v-list>
+          <v-list-tile v-for="(item, index) in items" :key="index" @click="">
+            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
       <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <i class="material-icons color_gris">shopping_cart</i>
         <span class="badge__badge naranja">0</span>
@@ -17,14 +21,7 @@
 
     <v-content>
       <div class="">
-        <v-menu offset-y>
-          <v-btn color="primary" dark slot="activator">Dropdown</v-btn>
-          <v-list>
-            <v-list-tile v-for="(item, index) in items" :key="index" @click="">
-              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-            </v-list-tile>
-          </v-list>
-        </v-menu>
+
 
       </div>
     </v-content>
@@ -36,18 +33,91 @@
       fixed
       app
     >
-      <v-list>
-        <!--<v-list-tile @click="right = !right">
-          <v-list-tile-action>
-            <v-icon>compare_arrows</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>-->
-      </v-list>
     </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+
+    <v-footer class="footer_pharol">
+      <v-container>
+        <v-layout row>
+          <v-flex xs4>
+            <br>
+            <h3 class="title_footer">Newsletter</h3>
+            <hr class="hr_footer">
+            <br>
+            <p class="title_footer_2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="title_footer_3"><i class="material-icons">radio_button_unchecked</i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <br>
+            <h3 class="title_footer">Redes</h3>
+            <hr class="hr_footer">
+            <br>
+            <div class="footer_redes">
+              <i class="material-icons color_gris">shopping_cart</i>
+              <i class="material-icons color_gris">shopping_cart</i>
+              <i class="material-icons color_gris">shopping_cart</i>
+              <i class="material-icons color_gris">shopping_cart</i>
+              <i class="material-icons color_gris">shopping_cart</i>
+            </div>
+          </v-flex>
+          <v-flex xs3>
+            <br>
+            <h3 class="title_footer">Contáctanos</h3>
+            <hr class="hr_footer">
+            <br>
+            <p class="title_footer_3"><i class="material-icons footer_azul">person_pin</i> Dirección</p>
+            <p class="title_footer_3">Lorem ipsum dolor sit<br> amet, consectetur adipiscing elit</p>
+            <br>
+            <p class="title_footer_3"><i class="material-icons footer_azul">person_pin</i> Teléfono / WhatsApp </p>
+            <p class="title_footer_3">+00-000-0000 / +00-000-0000</p>
+            <br>
+            <p class="title_footer_3"><i class="material-icons footer_azul">person_pin</i> Email</p>
+            <p class="title_footer_3">ejemplo@pharol.cl</p>
+          </v-flex>
+          <v-flex xs2>
+            <br>
+            <h3 class="title_footer">Nosotros</h3>
+            <hr class="hr_footer">
+            <br>
+            <div class="footer_nosotros">
+              <p class="title_footer_3">Quienes somos</p>
+              <p class="title_footer_3">Que es Pharol</p>
+              <p class="title_footer_3">Misión y Visión</p>
+              <p class="title_footer_3">Mapa del sitio</p>
+              <p class="title_footer_3">Terminos y condiciones</p>
+              <p class="title_footer_3">Políticas de privacidad</p>
+              <p class="title_footer_3">Envios</p>
+            </div>
+          </v-flex>
+          <v-flex xs3>
+            <br>
+            <h3 class="title_footer">App</h3>
+            <hr class="hr_footer">
+            <br>
+            <img class="resposive_img" src="@/assets/android.png">
+            <img class="resposive_img" src="@/assets/apple.png">
+            <br>
+            <h3 class="title_footer">Medios de pago</h3>
+            <hr class="hr_footer">
+            <br>
+            <img class="resposive_img" src="@/assets/webpage.png">
+            <br>
+            <h3 class="title_footer">Navegación Segura</h3>
+            <hr class="hr_footer">
+            <br>
+            <img class="resposive_img" src="@/assets/seguro.png">
+          </v-flex>
+        </v-layout>
+        <v-layout row>
+          <v-flex xs12 class="footer_proy">
+            <br>
+            <h3 class="title_footer">Proyecto aprobado por</h3>
+            <br>
+            <img class="resposive_img" src="@/assets/inu.png">
+          </v-flex>
+        </v-layout>
+      </v-container>
     </v-footer>
+    <div class="footer_bottom">
+      <p class="title_footer_2">"Copyright Pharol 2018 @ Derechos reservados</p>
+    </div>
   </v-app>
 </template>
 
@@ -64,7 +134,7 @@ export default {
         { title: 'Click Me' },
         { title: 'Click Me' },
         { title: 'Click Me' },
-        { title: 'Click Me 2' }
+        { title: 'Click Me 2222222' }
       ]
     }
   }
@@ -110,5 +180,61 @@ export default {
 }
 .color_gris{
   color: #d4d4d4;
+}
+.menu_init_title{
+  color: #212121;
+  margin-top: 17px;
+  text-transform: capitalize;
+}
+.menu_init_box{
+  padding-right: 70px;
+}
+
+/*resposive img*/
+.resposive_img{
+  max-width: 100%;
+}
+
+/*Footer*/
+.footer_pharol{
+  background: #161616!important;
+  height: auto!important;
+}
+.title_footer{
+  color: #fff;
+  font-size: 14px;
+}
+.hr_footer{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70px;
+  border: 1px solid #268ae0;
+}
+.title_footer_2{
+  color: #fff;
+}
+.title_footer_3{
+  color: #fff;
+  font-size: 12px;
+}
+.title_footer_3 i{
+  font-size: 13px;
+  font-weight: 900;
+  padding-right: 5px;
+}
+.footer_redes i{
+  font-size: 40px;
+  padding-right: 10px;
+}
+.footer_azul{
+  color: #268ae0;
+}
+.footer_proy{
+  text-align: center;
+}
+.footer_bottom{
+  text-align: center;
+  background: #02050c;
+  padding-top: 10px;
 }
 </style>
