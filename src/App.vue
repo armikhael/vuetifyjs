@@ -18,6 +18,14 @@
         <span class="badge__badge naranja">0</span>
       </v-btn>
     </v-toolbar>
+    <v-navigation-drawer
+      temporary
+      :right="right"
+      v-model="rightDrawer"
+      fixed
+      app
+    >
+    </v-navigation-drawer>
 
     <v-content>
         <hr>
@@ -68,25 +76,31 @@
         </v-container>
         <section class="section-a">
         </section>
+
+        <v-layout row>
+          <v-tabs class="detail_container_tabs"
+            v-model="active"
+            color="white"
+            dark
+            slider-color="blue_app"
+            centered>
+            <v-tab class="detail_title_tabs"
+              v-for="n in 4"
+              :key="n"
+              ripple>
+              Item {{ n }}
+            </v-tab>
+            <v-tab-item
+              v-for="n in 4"
+              :key="n">
+              <v-card flat>
+                <v-card-text>{{ text }}</v-card-text>
+              </v-card>
+            </v-tab-item>
+          </v-tabs>
+        </v-layout>
     </v-content>
 
-    <v-navigation-drawer
-      temporary
-      :right="right"
-      v-model="rightDrawer"
-      fixed
-      app
-    >
-    </v-navigation-drawer>
-
-    <v-layout row>
-
-    </v-layout>
-
-
-    <hr>
-      <p>Footer</p>
-    <hr>
     <v-footer class="footer_pharol">
       <v-container>
         <v-layout class="footer_row_resposive" row wrap>
@@ -192,7 +206,12 @@ export default {
         { title: 'Click Me' },
         { title: 'Click Me' },
         { title: 'Click Me 2222222' }
-      ]
+      ],
+      /* DETALLE DEL PRODUCTO */
+      active: null,
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      /* STEPEER */
+      e1: 0
     }
   }
 }
@@ -261,6 +280,10 @@ export default {
 .section-a{
   padding: 50px 0px;
   background: #f8f8f8;
+}
+.blue_app{
+  background-color: #268ae0 !important;
+  border-color: #268ae0 !important;
 }
 
 /*resposive img*/
@@ -350,7 +373,7 @@ export default {
     border-radius: 0px 2px 2px 0px;
 }
 .footer_email{
-    width: 75%;
+    width: 75%!important;
     border-radius: 2px 0px 0px 2px;
 }
 /*Detail Producto*/
@@ -396,6 +419,15 @@ export default {
   font-size: 25px;
   padding-right: 10px;
   color: #212121;
+}
+.detail_tabs{
+  width: 100%;
+}
+.detail_title_tabs{
+  color: #212121!important;
+}
+.tabs__container{
+  border-bottom: 1px solid #f9f7f7;
 }
 
 /*responsive 768*/
