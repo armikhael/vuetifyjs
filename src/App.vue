@@ -20,10 +20,54 @@
     </v-toolbar>
 
     <v-content>
-      <div class="">
-
-
-      </div>
+        <hr>
+          <p>Detalle del producto</p>
+        <hr>
+        <v-container>
+          <v-layout row wrap>
+            <v-flex xs12 sm12 md12>
+            <p class="menu_history">Inicio > Medicamentos > Tos y Gripa > Corcidin Gotas Pediatricas Caja con Frasco Con 30 ML Rx</p>
+            </v-flex>
+          </v-layout>
+          <v-layout row wrap>
+            <v-flex xs12 sm6 md6 class="p50">
+              <div class="detail_img_product">
+                <img class="resposive_img" src="@/assets/producto.png" width="100%">
+              </div>
+            </v-flex>
+            <v-flex xs12 sm6 md6 class="detail_product_caract prl50 row_resposive">
+              <h3>Corcidin Gotas Pediatricas Caja con Frasco Con 30 ML Rx</h3>
+              <br>
+              <p class="detail_title2">Princio(s) Activo(s)</p>
+              <p class="detail_title2">Laboratorio Chile</p>
+              <img class="resposive_img" src="@/assets/rr.png">
+              <img class="resposive_img" src="@/assets/rr.png">
+              <hr class="detail_hr">
+              <br>
+              <h2>$ 32.100</h2>
+              <div class="detail_box_number">
+                <v-btn fab dark small color="naranja">
+                  <v-icon dark>remove</v-icon>
+                </v-btn>
+                <input type="text" placeholder="0" class="form-control detail_number">
+                <v-btn fab dark small color="naranja">
+                  <v-icon dark>add</v-icon>
+                </v-btn>
+              </div>
+              <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+              <br><br>
+              <div class="detail_redes">
+                <i class="material-icons color_gris">shopping_cart</i>
+                <i class="material-icons color_gris">shopping_cart</i>
+                <i class="material-icons color_gris">shopping_cart</i>
+                <i class="material-icons color_gris">shopping_cart</i>
+                <i class="material-icons color_gris">shopping_cart</i>
+              </div>
+            </v-flex>
+          </v-layout>
+        </v-container>
+        <section class="section-a">
+        </section>
     </v-content>
 
     <v-navigation-drawer
@@ -34,9 +78,7 @@
       app
     >
     </v-navigation-drawer>
-    <hr>
-      <p>Detalle del producto</p>
-    <hr>
+
     <v-layout row>
 
     </v-layout>
@@ -203,6 +245,22 @@ export default {
 }
 .menu_init_box{
   padding-right: 70px;
+
+/*General*/
+}.application.theme--light {
+    background: #ffff;
+    color: rgba(0,0,0,0.87);
+}
+.p50{
+  padding: 50px;
+}
+.prl50{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.section-a{
+  padding: 50px 0px;
+  background: #f8f8f8;
 }
 
 /*resposive img*/
@@ -295,6 +353,62 @@ export default {
     width: 75%;
     border-radius: 2px 0px 0px 2px;
 }
+/*Detail Producto*/
+.menu_history{
+  color: #8e8e8e;
+  font-size: 12px;
+}
+.detail_img_product{
+  text-align: center;
+}
+.detail_img_product img{
+  width: 100%;
+}
+.detail_title2{
+  margin-bottom: 5px;
+  color: #8e8e8e;
+  font-size: 13px;
+}
+.detail_hr{
+  border: 1px solid #ddd;
+}
+.detail_number{
+  border: 1px solid #ddd;
+  width: 40px;
+  text-align: center;
+  border-radius: 0px;
+  margin-top: 2px;
+}
+.detail_box_number{
+  display: -webkit-box;
+  margin-top: 15px;
+}
+.btn--floating.btn--small {
+    height: 30px;
+    width: 30px;
+}
+.detail_btn_add{
+  color: #fff!important;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+.detail_redes i{
+  font-size: 25px;
+  padding-right: 10px;
+  color: #212121;
+}
+
+/*responsive 768*/
+@media (min-width: 768px){
+  .detail_img_product img{
+    width: 300px;
+  }
+  .detail_product_caract{
+    border-left:    2px solid #e0e0e0;
+  }
+
+}
+
 /*responsive 550*/
 @media (max-width: 550px){
   .footer_row_resposive{
@@ -309,5 +423,17 @@ export default {
   .footer_email{
       width: 100%;
     }
+  .hr_detail{
+    display: none;
+  }
+  .row_resposive{
+    text-align: center;
+  }
+    .detail_box_number {
+      display: block;
+  }
+  .detail_number{
+    margin: 0 auto;
+  }
 }
 </style>
