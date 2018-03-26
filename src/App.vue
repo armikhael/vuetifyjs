@@ -34,12 +34,194 @@
       app
     >
     </v-navigation-drawer>
+
+
+
+
+
     <hr>
       <p>Detalle del producto</p>
     <hr>
     <v-layout row>
+      <v-flex x12 sm6 md6>
+        <img src="http://www.nestle-family.com/uploads/product/6f46a57790ca4a3990a338f530685c7e.png" width="100%">
+      </v-flex>
+      <v-flex x12 sm6 md6>
+        <v-text-field
+          label="Label Text"
+          type="number"
+        ></v-text-field>
+      </v-flex>
 
     </v-layout>
+    <v-layout row>
+      <v-tabs
+        v-model="active"
+        color="cyan"
+        dark
+        slider-color="yellow"
+        centered>
+        <v-tab
+          v-for="n in 3"
+          :key="n"
+          ripple>
+          Item {{ n }}
+        </v-tab>
+        <v-tab-item
+          v-for="n in 3"
+          :key="n">
+          <v-card flat>
+            <v-card-text>{{ text }}</v-card-text>
+          </v-card>
+        </v-tab-item>
+      </v-tabs>
+    </v-layout>
+
+    <hr>
+      <p>Carousel de productos</p>
+    <hr>
+
+    <v-layout row>
+      <v-carousel>
+        <v-carousel-item>
+          <v-layout row>
+            <v-flex x12 sm3 md3>
+              <v-card>
+                <v-card-media src="http://www.nestle-family.com/uploads/product/6f46a57790ca4a3990a338f530685c7e.png" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+            <v-flex x12 sm3 md3>
+              <v-card>
+                <v-card-media src="http://www.nestle-family.com/uploads/product/6f46a57790ca4a3990a338f530685c7e.png" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+            <v-flex x12 sm3 md3>
+              <v-card>
+                <v-card-media src="http://www.nestle-family.com/uploads/product/6f46a57790ca4a3990a338f530685c7e.png" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+            <v-flex x12 sm3 md3>
+              <v-card>
+                <v-card-media src="http://www.nestle-family.com/uploads/product/6f46a57790ca4a3990a338f530685c7e.png" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-carousel-item>
+        <v-carousel-item>
+          <v-layout row>
+            <v-flex x12 sm3 md3>
+              <v-card>
+                <v-card-media src="http://www.nestle-family.com/uploads/product/6f46a57790ca4a3990a338f530685c7e.png" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+            <v-flex x12 sm3 md3>
+              <v-card>
+                <v-card-media src="http://www.nestle-family.com/uploads/product/6f46a57790ca4a3990a338f530685c7e.png" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+            <v-flex x12 sm3 md3>
+              <v-card>
+                <v-card-media src="http://www.nestle-family.com/uploads/product/6f46a57790ca4a3990a338f530685c7e.png" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+            <v-flex x12 sm3 md3>
+              <v-card>
+                <v-card-media src="http://www.nestle-family.com/uploads/product/6f46a57790ca4a3990a338f530685c7e.png" height="200px">
+                </v-card-media>
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+                    <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat color="orange">Share</v-btn>
+                  <v-btn flat color="orange">Explore</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-carousel-item>
+      </v-carousel>
+    </v-layout>
+
 
 
     <hr>
@@ -47,7 +229,7 @@
     <hr>
     <v-footer class="footer_pharol">
       <v-container>
-        <v-layout row wrap>
+        <v-layout row>
           <v-flex xs12 sm4 md4>
             <br>
             <h3 class="title_footer">Newsletter</h3>
@@ -145,7 +327,14 @@ export default {
         { title: 'Click Me' },
         { title: 'Click Me' },
         { title: 'Click Me 2222222' }
-      ]
+      ],
+
+      /* DETALLE DEL PRODUCTO */
+      active: null,
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+
+      /* CAROUSEL DE PRODUCTOS */
+
     }
   }
 }
