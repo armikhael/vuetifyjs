@@ -20,8 +20,8 @@
           <br>
           <p class="detail_title2">Princio(s) Activo(s)</p>
           <p class="detail_title2">Laboratorio Chile</p>
-          <img class="resposive_img" src="@/assets/rr.png">
-          <img class="resposive_img" src="@/assets/rr.png">
+          <img class="resposive_img" width="44px" src="@/assets/rr.png">
+          <img class="resposive_img" width="44px" src="@/assets/rr.png">
           <hr class="detail_hr">
           <br>
           <h2>$ 32.100</h2>
@@ -51,31 +51,33 @@
         <v-layout>
          <v-flex xs12 sm3 sm3>
            <v-card>
-             <div class="product-image-wrapper">
-               <div class="single-products">
-                 <div class="box_triangulo">
-                   <div class="triangulo_equilatero"><p>-31%</p></div>
-                 </div>
-                 <img class="resposive_img" src="@/assets/producto.png" width="100%">
-                 <div class="product-overlay">
-                   <div class="overlay-content">
-                     <div class="product_box_hover">
-                       <img class="resposive_img" src="@/assets/prot.png">
-                       <h2>Este producto requiere receta cheque</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                     </div>
-                     <div class="product_box_hover">
-                       <img class="resposive_img" src="@/assets/prot.png">
-                       <h2>Este producto requiere receta cheque</h2>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+             <a href="#">
+               <div class="product-image-wrapper">
+                 <div class="single-products">
+                   <div class="box_triangulo">
+                     <div class="triangulo_equilatero"><p>-31%</p></div>
+                   </div>
+                   <img class="resposive_img" src="@/assets/producto.png" width="100%">
+                   <div class="product-overlay">
+                     <div class="overlay-content">
+                       <div class="product_box_hover">
+                         <img class="resposive_img" src="@/assets/prot.png">
+                         <h2>Este producto requiere receta cheque</h2>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                       </div>
+                       <div class="product_box_hover">
+                         <img class="resposive_img" src="@/assets/prot.png">
+                         <h2>Este producto requiere receta cheque</h2>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                       </div>
                      </div>
                    </div>
                  </div>
                </div>
-             </div>
+             </a>
              <v-card-title primary-title>
                <div>
-                 <h4 class="carru_title_1">Corcidin Gotas Pediatricas Caja con Frasco Con 30 ML Rx</h4>
+                 <a href="#"><h4 class="carru_title_1">Corcidin Gotas Pediatricas Caja con Frasco Con 30 ML Rx</h4></a>
                  <p class="carru_title_2">Laboratorio Chile</p>
                  <h4 class="carru_title_3">$ 32.100 <span class="carru_title_4">$10.698</span></h4>
                </div>

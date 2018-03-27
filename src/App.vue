@@ -219,6 +219,9 @@ export default {
   padding-right: 70px;
 
 /*General*/
+a:link {
+    text-decoration: none!important;
+}
 }.application.theme--light {
     background: #ffff;
     color: rgba(0,0,0,0.87);
@@ -238,6 +241,7 @@ export default {
   background-color: #268ae0 !important;
   border-color: #268ae0 !important;
 }
+
 
 /*resposive img*/
 .resposive_img{
