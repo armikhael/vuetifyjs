@@ -31,6 +31,7 @@
 
     <v-content>
         <component-product-detail> </component-product-detail>
+        <component-tabs></component-tabs>
         <!-- <hr>
           <p>Detalle del producto</p>
         <hr>
@@ -154,13 +155,15 @@
 import Toolbar from './components/Toolbar'
 import ProductDetail from './components/ProductDetail'
 import Footer from './components/Footer'
+import Tabs from './components/Tabs'
 
 export default {
   name: 'App',
   components: {
     'component-toolbar': Toolbar,
     'component-product-detail': ProductDetail,
-    'component-footer': Footer
+    'component-footer': Footer,
+    'component-tabs': Tabs
   },
   data () {
     return {
@@ -290,15 +293,8 @@ export default {
   padding-right: 10px;
   color: #212121;
 }
-.detail_tabs{
-  width: 100%;
-}
-.detail_title_tabs{
-  color: #212121!important;
-}
-.tabs__container{
-  border-bottom: 1px solid #f9f7f7;
-}
+
+
 .triangulo_equilatero {
      width: 0;
      height: 0;

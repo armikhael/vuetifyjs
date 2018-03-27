@@ -92,28 +92,6 @@
 
     </section>
 
-    <v-layout row>
-      <v-tabs class="detail_container_tabs"
-        v-model="active"
-        color="white"
-        dark
-        slider-color="blue_app"
-        centered>
-        <v-tab class="detail_title_tabs"
-          v-for="n in 4"
-          :key="n"
-          ripple>
-          Item {{ n }}
-        </v-tab>
-        <v-tab-item
-          v-for="n in 4"
-          :key="n">
-          <v-card flat>
-            <v-card-text>{{ text }}</v-card-text>
-          </v-card>
-        </v-tab-item>
-      </v-tabs>
-    </v-layout>
   </div>
 </template>
 
