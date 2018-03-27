@@ -79,10 +79,28 @@
             <v-layout>
              <v-flex xs12 sm3 sm3>
                <v-card>
-                 <div class="box_triangulo">
-                   <div class="triangulo_equilatero"><p>-31%</p></div>
+                 <div class="product-image-wrapper">
+                   <div class="single-products">
+                     <div class="box_triangulo">
+                       <div class="triangulo_equilatero"><p>-31%</p></div>
+                     </div>
+                     <img class="resposive_img" src="@/assets/producto.png" width="100%">
+                     <div class="product-overlay">
+                       <div class="overlay-content">
+                         <div class="product_box_hover">
+                           <img class="resposive_img" src="@/assets/prot.png">
+                           <h2>Este producto requiere receta cheque</h2>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                         </div>
+                         <div class="product_box_hover">
+                           <img class="resposive_img" src="@/assets/prot.png">
+                           <h2>Este producto requiere receta cheque</h2>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
                  </div>
-                 <img class="resposive_img" src="@/assets/producto.png" width="100%">
                  <v-card-title primary-title>
                    <div>
                      <h4 class="carru_title_1">Corcidin Gotas Pediatricas Caja con Frasco Con 30 ML Rx</h4>
@@ -495,6 +513,62 @@ export default {
   color: #9a9a9a;
   font-size: 12px;
   text-decoration:line-through;
+}
+.product-overlay {
+    background: #ffffff80;
+    top: 0;
+    display: none;
+    height: 0;
+    position: absolute;
+    -webkit-transition: height 500ms ease 0s;
+    transition: height 500ms ease 0s;
+    width: 100%;
+    display: block;
+}
+.product-overlay .overlay-content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+.product-overlay h2 {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.product-overlay p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #212121;
+}
+.product-overlay .add-to-cart {
+    background: #fff;
+    border: 0 none;
+    border-radius: 0;
+    color: #FE980F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.add-to-cart i {
+    margin-right: 5px;
+}
+
+.single-products:hover .product-overlay {
+    display: block;
+    height: 100%;
+}
+.single-products {
+    position: relative;
+}
+
+.product-image-wrapper {
+    overflow: hidden;
+}
+.product_box_hover{
+  padding: 15px;
 }
 
 
