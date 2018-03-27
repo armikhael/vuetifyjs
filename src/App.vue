@@ -145,6 +145,10 @@
           </v-tabs>
         </v-layout> -->
     </v-content>
+
+
+    <component-tabs-icon-text></component-tabs-icon-text>
+
     <component-footer></component-footer>
 
 
@@ -156,6 +160,7 @@ import Toolbar from './components/Toolbar'
 import ProductDetail from './components/ProductDetail'
 import Footer from './components/Footer'
 import Tabs from './components/Tabs'
+import TabsIconText from './components/TabsIconText'
 
 export default {
   name: 'App',
@@ -163,7 +168,9 @@ export default {
     'component-toolbar': Toolbar,
     'component-product-detail': ProductDetail,
     'component-footer': Footer,
-    'component-tabs': Tabs
+    'component-tabs': Tabs,
+    'component-tabs-icon-text': TabsIconText
+
   },
   data () {
     return {
@@ -174,11 +181,11 @@ export default {
 </script>
 
 <style>
-  .toolbar__content, .toolbar__extension {
-    background: #fbfbfb;
-  }
-  .badge--left .badge__badge {
-    left: -22px;
+.toolbar__content, .toolbar__extension {
+  background: #fbfbfb;
+}
+.badge--left .badge__badge {
+  left: -22px;
 }
 
 .badge__badge {
