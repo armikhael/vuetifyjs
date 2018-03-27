@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .tabs__container{
   border-bottom: 1px solid #f9f7f7;
 }

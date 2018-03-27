@@ -2,148 +2,11 @@
   <v-app>
 
     <component-toolbar></component-toolbar>
-    <!-- <v-toolbar app :clipped-left="clipped">
-      <img src="@/assets/logoapp.png" alt="Vuetify.js">
-      <v-spacer></v-spacer>
-      <v-menu left class="menu_init_box">
-        <v-btn icon dark slot="activator">
-          <i class="material-icons color_gris">person_pin</i> <p class="menu_init_title">Iniciar</p>
-        </v-btn>
-        <v-list>
-          <v-list-tile v-for="(item, index) in items" :key="index" @click="">
-            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-          </v-list-tile>
-        </v-list>
-      </v-menu>
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <i class="material-icons color_gris">shopping_cart</i>
-        <span class="badge__badge naranja">0</span>
-      </v-btn>
-    </v-toolbar>
-    <v-navigation-drawer
-      temporary
-      :right="right"
-      v-model="rightDrawer"
-      fixed
-      app
-    >
-    </v-navigation-drawer> -->
 
     <v-content>
         <component-product-detail> </component-product-detail>
+        <component-slider></component-slider>
         <component-tabs></component-tabs>
-        <!-- <hr>
-          <p>Detalle del producto</p>
-        <hr>
-        <v-container>
-          <v-layout row wrap>
-            <v-flex xs12 sm12 md12>
-            <p class="menu_history">Inicio > Medicamentos > Tos y Gripa > Corcidin Gotas Pediatricas Caja con Frasco Con 30 ML Rx</p>
-            </v-flex>
-          </v-layout>
-          <v-layout row wrap>
-            <v-flex xs12 sm6 md6 class="p50">
-              <div class="detail_img_product">
-                <img class="resposive_img" src="@/assets/producto.png" width="100%">
-              </div>
-            </v-flex>
-            <v-flex xs12 sm6 md6 class="detail_product_caract prl50 row_resposive">
-              <h3>Corcidin Gotas Pediatricas Caja con Frasco Con 30 ML Rx</h3>
-              <br>
-              <p class="detail_title2">Princio(s) Activo(s)</p>
-              <p class="detail_title2">Laboratorio Chile</p>
-              <img class="resposive_img" src="@/assets/rr.png">
-              <img class="resposive_img" src="@/assets/rr.png">
-              <hr class="detail_hr">
-              <br>
-              <h2>$ 32.100</h2>
-              <div class="detail_box_number">
-                <v-btn fab dark small color="naranja">
-                  <v-icon dark>remove</v-icon>
-                </v-btn>
-                <input type="text" placeholder="0" class="form-control detail_number">
-                <v-btn fab dark small color="naranja">
-                  <v-icon dark>add</v-icon>
-                </v-btn>
-              </div>
-              <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
-              <br><br>
-              <div class="detail_redes">
-                <i class="material-icons color_gris">shopping_cart</i>
-                <i class="material-icons color_gris">shopping_cart</i>
-                <i class="material-icons color_gris">shopping_cart</i>
-                <i class="material-icons color_gris">shopping_cart</i>
-                <i class="material-icons color_gris">shopping_cart</i>
-              </div>
-            </v-flex>
-          </v-layout>
-        </v-container>
-        <section class="section-a">
-          <v-container>
-            <v-layout>
-             <v-flex xs12 sm3 sm3>
-               <v-card>
-                 <div class="product-image-wrapper">
-                   <div class="single-products">
-                     <div class="box_triangulo">
-                       <div class="triangulo_equilatero"><p>-31%</p></div>
-                     </div>
-                     <img class="resposive_img" src="@/assets/producto.png" width="100%">
-                     <div class="product-overlay">
-                       <div class="overlay-content">
-                         <div class="product_box_hover">
-                           <img class="resposive_img" src="@/assets/prot.png">
-                           <h2>Este producto requiere receta cheque</h2>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                         </div>
-                         <div class="product_box_hover">
-                           <img class="resposive_img" src="@/assets/prot.png">
-                           <h2>Este producto requiere receta cheque</h2>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-                 <v-card-title primary-title>
-                   <div>
-                     <h4 class="carru_title_1">Corcidin Gotas Pediatricas Caja con Frasco Con 30 ML Rx</h4>
-                     <p class="carru_title_2">Laboratorio Chile</p>
-                     <h4 class="carru_title_3">$ 32.100 <span class="carru_title_4">$10.698</span></h4>
-                   </div>
-                 </v-card-title>
-                 <div class="carru_add_cart_btn">
-                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
-                 </div>
-               </v-card>
-             </v-flex>
-           </v-layout>
-         </v-container>
-
-        </section>
-
-        <v-layout row>
-          <v-tabs class="detail_container_tabs"
-            v-model="active"
-            color="white"
-            dark
-            slider-color="blue_app"
-            centered>
-            <v-tab class="detail_title_tabs"
-              v-for="n in 4"
-              :key="n"
-              ripple>
-              Item {{ n }}
-            </v-tab>
-            <v-tab-item
-              v-for="n in 4"
-              :key="n">
-              <v-card flat>
-                <v-card-text>{{ text }}</v-card-text>
-              </v-card>
-            </v-tab-item>
-          </v-tabs>
-        </v-layout> -->
     </v-content>
     <component-footer></component-footer>
 
@@ -156,6 +19,7 @@ import Toolbar from './components/Toolbar'
 import ProductDetail from './components/ProductDetail'
 import Footer from './components/Footer'
 import Tabs from './components/Tabs'
+import Slider from './components/Slider'
 
 export default {
   name: 'App',
@@ -163,7 +27,8 @@ export default {
     'component-toolbar': Toolbar,
     'component-product-detail': ProductDetail,
     'component-footer': Footer,
-    'component-tabs': Tabs
+    'component-tabs': Tabs,
+    'component-slider': Slider
   },
   data () {
     return {
@@ -237,6 +102,9 @@ export default {
 }
 .p50{
   padding: 50px;
+}
+.p10{
+  padding: 10px;
 }
 .prl50{
   padding-left: 50px;
@@ -362,7 +230,11 @@ export default {
     overflow: hidden;
 }
 .product_box_hover{
-  padding: 15px;
+  padding: 10px;
+}
+.detail_btn_add i{
+  font-size: 15px;
+  margin-left: 6px;
 }
 
 

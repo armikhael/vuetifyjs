@@ -111,7 +111,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
 a:link {
     text-decoration: none!important;
 }
