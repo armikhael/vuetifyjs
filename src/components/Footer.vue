@@ -1,8 +1,5 @@
 <template lang="html">
   <div>
-    <hr>
-      <p>Footer</p>
-    <hr>
     <v-footer class="footer_pharol">
       <v-container>
         <v-layout class="footer_row_resposive" row wrap>

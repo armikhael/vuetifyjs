@@ -180,10 +180,7 @@ export default {
   .badge--left .badge__badge {
     left: -22px;
 }
-.naranja {
-    background-color: #fd5621!important;
-    border-color: #fd5621!important;
-}
+
 .badge__badge {
     color: #fff;
     display: -webkit-box;
@@ -219,10 +216,22 @@ export default {
   text-transform: capitalize;
 }
 .menu_init_box{
-  padding-right: 70px;
+  padding-right: 70px;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*General*/
-}.application.theme--light {
+.application.theme--light {
     background: #ffff;
     color: rgba(0,0,0,0.87);
 }
@@ -241,6 +250,10 @@ export default {
   background-color: #268ae0 !important;
   border-color: #268ae0 !important;
 }
+.naranja {
+    background-color: #fd5621!important;
+    border-color: #fd5621!important;
+}
 
 
 /*resposive img*/
@@ -249,52 +262,8 @@ export default {
 }
 
 
-/*Detail Producto*/
-.menu_history{
-  color: #8e8e8e;
-  font-size: 12px;
-}
-.detail_img_product{
-  text-align: center;
-}
-.detail_img_product img{
-  width: 100%;
-}
-.detail_title2{
-  margin-bottom: 5px;
-  color: #8e8e8e;
-  font-size: 13px;
-}
-.detail_hr{
-  border: 1px solid #ddd;
-}
-.detail_number{
-  border: 1px solid #ddd;
-  width: 40px;
-  text-align: center;
-  border-radius: 0px;
-  margin-top: 2px;
-}
-.detail_box_number{
-  display: -webkit-box;
-  margin-top: 15px;
-}
-.btn--floating.btn--small {
-    height: 30px;
-    width: 30px;
-}
-.detail_btn_add{
-  color: #fff!important;
-  text-transform: capitalize;
-  margin-top: 15px;
-}
-.detail_redes i{
-  font-size: 25px;
-  padding-right: 10px;
-  color: #212121;
-}
 
-
+/*Producto*/
 .triangulo_equilatero {
      width: 0;
      height: 0;
@@ -397,30 +366,10 @@ export default {
 }
 
 
-/*responsive 768*/
-@media (min-width: 768px){
-  .detail_img_product img{
-    width: 300px;
-  }
-  .detail_product_caract{
-    border-left:    2px solid #e0e0e0;
-  }
-
-}
-
 /*responsive 550*/
 @media (max-width: 550px){
-  .hr_detail{
-    display: none;
-  }
   .row_resposive{
     text-align: center;
-  }
-  .detail_box_number {
-      display: block;
-  }
-  .detail_number{
-    margin: 0 auto;
   }
 }
 </style>
