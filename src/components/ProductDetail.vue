@@ -134,4 +134,7 @@ export default {
 
 
 <style scoped>
+a:link {
+    text-decoration: none!important;
+}
 </style>
