@@ -12,15 +12,15 @@
               <h3 class="cart_manu_price">$ 99.20</h3>
               <div class="cart_menu_box_number">
                 <v-btn fab dark small color="naranja">
-                  <v-icon dark style="font-size:10px;    font-weight: bold;">remove</v-icon>
+                  <v-icon dark style="font-size:8px;    font-weight: bold;">remove</v-icon>
                 </v-btn>
                 <input type="text" placeholder="0" class="form-control detail_number_cart_menu">
                 <v-btn fab dark small color="naranja">
-                  <v-icon dark style="font-size:10px;    font-weight: bold;">add</v-icon>
+                  <v-icon dark style="font-size:8px;    font-weight: bold;">add</v-icon>
                 </v-btn>
-                <a href="#" class="cart_menu_delete">
-                  <i class="material-icons">delete</i>
-                </a>
+                <v-btn class="cart_menu_delete">
+                  <i class="material-icons" style="color: #757575;font-size: 20px;padding-left: 10px;">delete</i>
+                </v-btn>
               </div>
             </div>
         </v-flex>
@@ -74,19 +74,20 @@ export default {
 }
 .detail_number_cart_menu{
   border: 1px solid #ddd;
-  width: 27px;
+  width: 20px;
   text-align: center;
   border-radius: 0px;
   margin-top: 2px;
 }
-.cart_menu_delete i{
-  color: #757575;
-  font-size: 15px;
-  padding-left: 10px;
+.cart_menu_delete{
+  background: transparent!important;
+  margin: 0;
+  min-width: 0px;
+  box-shadow: none!important;
 }
 .detail_box_number_cart_menu button{
-  height: 15px!important;
-  width: 15px!important;
+  height: 12px!important;
+  width: 12px!important;
   margin-top: 0px;
 }
 </style>
