@@ -1,18 +1,15 @@
 <template>
   <v-app>
-
     <component-toolbar></component-toolbar>
-
     <v-content>
         <component-product-detail> </component-product-detail>
         <component-slider></component-slider>
         <component-tabs></component-tabs>
         <component-tabs2></component-tabs2>
         <component-patologia></component-patologia>
+        <component-micarrito></component-micarrito>
     </v-content>
     <component-footer></component-footer>
-
-
   </v-app>
 </template>
 
@@ -24,6 +21,7 @@ import Tabs from './components/Tabs'
 import Tabs2 from './components/Tabs2'
 import Slider from './components/Slider'
 import Patologia from './components/Patologia'
+import MiCarrito from './components/MiCarrito'
 
 export default {
   name: 'App',
@@ -34,7 +32,8 @@ export default {
     'component-tabs': Tabs,
     'component-slider': Slider,
     'component-tabs2': Tabs2,
-    'component-patologia': Patologia
+    'component-patologia': Patologia,
+    'component-micarrito': MiCarrito
   },
   data () {
     return {
