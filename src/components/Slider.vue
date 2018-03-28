@@ -40,7 +40,7 @@
                    </div>
                  </v-card-title>
                  <div class="carru_add_cart_btn">
-                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+                   <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
                  </div>
                </v-card>
              </v-flex>
@@ -78,7 +78,7 @@
                    </div>
                  </v-card-title>
                  <div class="carru_add_cart_btn">
-                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+                   <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
                  </div>
                </v-card>
              </v-flex>
@@ -116,7 +116,7 @@
                    </div>
                  </v-card-title>
                  <div class="carru_add_cart_btn">
-                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+                   <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
                  </div>
                </v-card>
              </v-flex>
@@ -154,7 +154,7 @@
                    </div>
                  </v-card-title>
                  <div class="carru_add_cart_btn">
-                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+                   <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
                  </div>
                </v-card>
              </v-flex>
@@ -205,7 +205,7 @@
                    </div>
                  </v-card-title>
                  <div class="carru_add_cart_btn">
-                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+                   <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
                  </div>
                </v-card>
              </v-flex>
@@ -243,7 +243,7 @@
                    </div>
                  </v-card-title>
                  <div class="carru_add_cart_btn">
-                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+                   <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
                  </div>
                </v-card>
              </v-flex>
@@ -281,7 +281,7 @@
                    </div>
                  </v-card-title>
                  <div class="carru_add_cart_btn">
-                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+                   <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
                  </div>
                </v-card>
              </v-flex>
@@ -332,7 +332,7 @@
                    </div>
                  </v-card-title>
                  <div class="carru_add_cart_btn">
-                   <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+                   <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
                  </div>
                </v-card>
              </v-flex>
@@ -362,6 +362,7 @@ export default {
 <style>
 .carousel_master_p{
   height: auto;
+  box-shadow: none;
 }
 .carousel_master_p .carousel__right {
     right: 5px;

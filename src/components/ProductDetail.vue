@@ -34,7 +34,7 @@
               <v-icon dark>add</v-icon>
             </v-btn>
           </div>
-          <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+          <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
           <br><br>
           <div class="detail_redes">
             <i class="material-icons color_gris">shopping_cart</i>
@@ -83,7 +83,7 @@
                </div>
              </v-card-title>
              <div class="carru_add_cart_btn">
-               <v-btn color="naranja detail_btn_add">Agregar al carro | <i class="material-icons">shopping_cart</i></v-btn>
+               <v-btn color="naranja detail_btn_add">Agregar al carro <span class="line_add_cart">|</span> <i class="material-icons">shopping_cart</i></v-btn>
              </div>
            </v-card>
          </v-flex>
@@ -150,11 +150,6 @@ a:link {
 .btn--floating.btn--small {
     height: 30px;
     width: 30px;
-}
-.detail_btn_add{
-  color: #fff!important;
-  text-transform: capitalize;
-  margin-top: 15px;
 }
 .detail_redes i{
   font-size: 25px;

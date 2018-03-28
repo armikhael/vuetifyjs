@@ -100,8 +100,8 @@ export default {
 
 /*General*/
 .application.theme--light {
-    background: #ffff;
-    color: rgba(0,0,0,0.87);
+  background: #ffff;
+  color: rgba(0,0,0,0.87);
 }
 .p50{
   padding: 50px;
@@ -122,8 +122,8 @@ export default {
   border-color: #268ae0 !important;
 }
 .naranja {
-    background-color: #fd5621!important;
-    border-color: #fd5621!important;
+  background-color: #fd5621!important;
+  border-color: #fd5621!important;
 }
 
 
@@ -136,12 +136,12 @@ export default {
 
 /*Producto*/
 .triangulo_equilatero {
-     width: 0;
-     height: 0;
-     border-right: 40px solid transparent;
-     border-top: 40px solid #f8002d;
-     border-left: 40px solid #f8002d;
-     border-bottom: 40px solid transparent;
+   width: 0;
+   height: 0;
+   border-right: 40px solid transparent;
+   border-top: 40px solid #f8002d;
+   border-left: 40px solid #f8002d;
+   border-bottom: 40px solid transparent;
 }
 .box_triangulo{
   position: absolute;
@@ -180,64 +180,78 @@ export default {
   text-decoration:line-through;
 }
 .product-overlay {
-    background: #ffffff80;
-    top: 0;
-    display: none;
-    height: 0;
-    position: absolute;
-    -webkit-transition: height 500ms ease 0s;
-    transition: height 500ms ease 0s;
-    width: 100%;
-    display: block;
+  background: #ffffff80;
+  top: 0;
+  display: none;
+  height: 0;
+  position: absolute;
+  -webkit-transition: height 500ms ease 0s;
+  transition: height 500ms ease 0s;
+  width: 100%;
+  display: block;
 }
 .product-overlay .overlay-content {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 .product-overlay h2 {
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
 }
 .product-overlay p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #212121;
 }
 .product-overlay .add-to-cart {
-    background: #fff;
-    border: 0 none;
-    border-radius: 0;
-    color: #FE980F;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin-bottom: 25px;
+  background: #fff;
+  border: 0 none;
+  border-radius: 0;
+  color: #FE980F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 25px;
 }
 .add-to-cart i {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .single-products:hover .product-overlay {
-    display: block;
-    height: 100%;
+  display: block;
+  height: 100%;
 }
 .single-products {
-    position: relative;
+  position: relative;
 }
 
 .product-image-wrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
 .product_box_hover{
   padding: 10px;
 }
 .detail_btn_add i{
-  font-size: 15px;
+  font-size: 16px;
   margin-left: 6px;
+  margin-right: -10px;
+}
+.detail_btn_add {
+  color: #fff!important;
+  text-transform: none;
+  margin-top: 15px;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.line_add_cart{
+  color: #d6491c;
+  padding-left: 10px;
+  padding-right: 5px;
 }
 
 
