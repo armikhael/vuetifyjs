@@ -8,6 +8,7 @@
         <component-slider></component-slider>
         <component-tabs></component-tabs>
         <component-tabs2></component-tabs2>
+        <component-patologia></component-patologia>
     </v-content>
     <component-footer></component-footer>
 
@@ -22,6 +23,7 @@ import Footer from './components/Footer'
 import Tabs from './components/Tabs'
 import Tabs2 from './components/Tabs2'
 import Slider from './components/Slider'
+import Patologia from './components/Patologia'
 
 export default {
   name: 'App',
@@ -31,7 +33,8 @@ export default {
     'component-footer': Footer,
     'component-tabs': Tabs,
     'component-slider': Slider,
-    'component-tabs2': Tabs2
+    'component-tabs2': Tabs2,
+    'component-patologia': Patologia
   },
   data () {
     return {
@@ -117,6 +120,9 @@ export default {
   padding: 50px 0px;
   background: #f8f8f8;
 }
+.section-b{
+  background: #f8f8f8;
+}
 .blue_app{
   background-color: #268ae0 !important;
   border-color: #268ae0 !important;
@@ -124,6 +130,9 @@ export default {
 .naranja {
   background-color: #fd5621!important;
   border-color: #fd5621!important;
+}
+.center{
+  text-align: center;
 }
 
 
