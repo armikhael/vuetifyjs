@@ -6,16 +6,17 @@
       dark
       slider-color="blue_app"
       centered>
-      <v-tab class="detail_title_tabs"
+      <v-tab class="detail_title_tabs_2"
         v-for="n in 4"
         :key="n"
         ripple>
-        Item {{ n }}
+        <i class="material-icons color_gris">shopping_cart</i>
+        <h4 class="title_tabs2">Item {{ n }}</h4>
       </v-tab>
       <v-tab-item
         v-for="n in 4"
         :key="n">
-        <v-card flat>
+        <v-card flat class="card_tabs2">
           <v-card-text>{{ text }}</v-card-text>
         </v-card>
       </v-tab-item>
@@ -39,13 +40,39 @@ export default {
 </script>
 
 <style>
-/*.tabs__container{
-  border-bottom: 1px solid #f9f7f7;
+.detail_title_tabs_2{
+  color: #8a8a8a!important;
 }
-.detail_tabs{
-  width: 100%;
+.tabs__slider {
+    display: none;
 }
-.detail_title_tabs{
+.detail_title_tabs_2 a{
+  display: block;
+}
+.title_tabs2{
+  text-transform: capitalize;
+}
+.tabs__item{
+  padding-top: 20px;
+}
+.tabs__item i{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.tabs__item--active i{
+  color: #268ae0;
+}
+.tabs__item--active{
+  background: #e5e5e5;
+  border-top: 2px solid #268ae0;
+  padding-top: 20px;
   color: #212121!important;
-}*/
+}
+.card_tabs2{
+  background-color: #e5e5e5!important;
+}
+.tabs__container{
+  height: 90px;
+  border-bottom: 1px solid #999999;
+}
 </style>

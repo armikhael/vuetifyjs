@@ -7,6 +7,7 @@
         <component-product-detail> </component-product-detail>
         <component-slider></component-slider>
         <component-tabs></component-tabs>
+        <component-tabs2></component-tabs2>
     </v-content>
     <component-footer></component-footer>
 
@@ -19,6 +20,7 @@ import Toolbar from './components/Toolbar'
 import ProductDetail from './components/ProductDetail'
 import Footer from './components/Footer'
 import Tabs from './components/Tabs'
+import Tabs2 from './components/Tabs2'
 import Slider from './components/Slider'
 
 export default {
@@ -28,7 +30,8 @@ export default {
     'component-product-detail': ProductDetail,
     'component-footer': Footer,
     'component-tabs': Tabs,
-    'component-slider': Slider
+    'component-slider': Slider,
+    'component-tabs2': Tabs2
   },
   data () {
     return {
