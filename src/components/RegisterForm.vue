@@ -79,7 +79,7 @@
           <v-btn color="naranja detail_btn_register">Registrarse</v-btn>
           <br><br>
           <h3 class="form_cap_obli_text"><span class="requerido_form">*</span> Campos Obligatorios</h3>
-          <v-checkbox label="Acepto" v-model="checkbox" required></v-checkbox>
+          <v-checkbox label="Acepto los terminos y Condiciones y Politicas de Privacidad" v-model="checkbox" required></v-checkbox>
         </v-container>
       </v-card>
     </div>
