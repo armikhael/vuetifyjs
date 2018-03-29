@@ -9,6 +9,7 @@
         <component-patologia></component-patologia>
         <component-micarrito></component-micarrito>
         <component-registerform></component-registerform>
+
     </v-content>
     <component-footer></component-footer>
   </v-app>
@@ -52,9 +53,9 @@ export default {
   }
   .badge--left .badge__badge {
     left: -22px;
-}
+  }
 
-.badge__badge {
+  .badge__badge {
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -79,17 +80,17 @@ export default {
     flex-wrap: wrap;
     -webkit-transition: .3s cubic-bezier(.25,.8,.5,1);
     transition: .3s cubic-bezier(.25,.8,.5,1);
-}
-.color_gris{
-  color: #d4d4d4;
-}
-.menu_init_title{
-  color: #212121;
-  margin-top: 17px;
-  text-transform: capitalize;
-}
-.menu_init_box{
-  padding-right: 70px;}
+  }
+  .color_gris{
+    color: #d4d4d4;
+  }
+  .menu_init_title{
+    color: #212121;
+    margin-top: 17px;
+    text-transform: capitalize;
+  }
+  .menu_init_box{
+    padding-right: 70px;}
 
 
 

@@ -74,20 +74,20 @@ export default {
 }
 .detail_number_cart_menu{
   border: 1px solid #ddd;
-  width: 20px;
+  width: 27px;
   text-align: center;
   border-radius: 0px;
   margin-top: 2px;
 }
-.cart_menu_delete{
-  background: transparent!important;
-  margin: 0;
-  min-width: 0px;
-  box-shadow: none!important;
+.cart_menu_delete i{
+  color: #757575;
+  font-size: 15px;
+  padding-left: 10px;
 }
 .detail_box_number_cart_menu button{
-  height: 12px!important;
-  width: 12px!important;
+  height: 15px!important;
+  width: 15px!important;
   margin-top: 0px;
 }
+
 </style>
