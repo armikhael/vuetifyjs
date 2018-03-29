@@ -79,6 +79,11 @@ export default {
   border-radius: 0px;
   margin-top: 2px;
 }
+.cart_menu_delete{
+  box-shadow: none!important;
+  background-color: transparent!important;
+  min-width: 10px!important;
+}
 .cart_menu_delete i{
   color: #757575;
   font-size: 15px;
