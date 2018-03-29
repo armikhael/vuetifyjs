@@ -50,6 +50,7 @@ export default {
   width: 100%;
   color: #5e0093;
   font-weight: 600;
+  font-size: 20px;
 }
 .tile_modals_pharol_2{
   text-align: center;
