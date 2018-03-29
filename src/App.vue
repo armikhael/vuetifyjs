@@ -10,6 +10,7 @@
         <component-micarrito></component-micarrito>
         <component-registerform></component-registerform>
         <component-list></component-list>
+        <component-modalspharol></component-modalspharol>
 
     </v-content>
     <component-footer></component-footer>
@@ -27,6 +28,7 @@ import Patologia from './components/Patologia'
 import MiCarrito from './components/MiCarrito'
 import RegisterForm from './components/RegisterForm'
 import List from './components/List'
+import ModalsPharol from './components/ModalsPharol'
 
 export default {
   name: 'App',
@@ -40,7 +42,8 @@ export default {
     'component-patologia': Patologia,
     'component-micarrito': MiCarrito,
     'component-registerform': RegisterForm,
-    'component-list': List
+    'component-list': List,
+    'component-modalspharol': ModalsPharol
   },
   data () {
     return {

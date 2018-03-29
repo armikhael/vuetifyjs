@@ -21,7 +21,8 @@ import {
   VCarousel,
   VForm,
   VSelect,
-  VCheckbox
+  VCheckbox,
+  VDialog
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/app.styl'
 
@@ -43,7 +44,8 @@ Vue.use(Vuetify, {
     VCarousel,
     VForm,
     VSelect,
-    VCheckbox
+    VCheckbox,
+    VDialog
   },
   theme: {
     primary: '#ee44aa',
