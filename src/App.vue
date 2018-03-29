@@ -9,6 +9,7 @@
         <component-patologia></component-patologia>
         <component-micarrito></component-micarrito>
         <component-registerform></component-registerform>
+        <component-list></component-list>
 
     </v-content>
     <component-footer></component-footer>
@@ -25,6 +26,7 @@ import Slider from './components/Slider'
 import Patologia from './components/Patologia'
 import MiCarrito from './components/MiCarrito'
 import RegisterForm from './components/RegisterForm'
+import List from './components/List'
 
 export default {
   name: 'App',
@@ -37,7 +39,8 @@ export default {
     'component-tabs2': Tabs2,
     'component-patologia': Patologia,
     'component-micarrito': MiCarrito,
-    'component-registerform': RegisterForm
+    'component-registerform': RegisterForm,
+    'component-list': List
   },
   data () {
     return {

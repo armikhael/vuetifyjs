@@ -6,7 +6,7 @@
         <div style="width:100px">
           <img src="@/assets/carrito.png" width="100%">
         </div>
-        <v-flex xs12 sm10 sm10 class="p10">
+        <v-flex xs12 sm10 sm10 class="p10 center-res">
           <h3 class="title_cart_menu_title_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
             <div class="detail_box_number_cart_menu">
               <h3 class="cart_manu_price">$ 99.20</h3>
